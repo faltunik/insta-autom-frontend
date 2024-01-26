@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+    <title>Scrape Data</title>
+</head>
+<body>
+    <div class="login-box">
+        <nav class="container-fluid">
+            <ul>
+                <li><strong>Scrape Instagram Data</strong></li>
+            </ul>
+            
+        </nav>
+        <main class="container">
+            <div class="grid">
+                <section>
+                    <hgroup>
+                    </hgroup>
+                    <form id="scrape-form">
+                        <input type="text" id="insta_username" name="username" placeholder="Insta Username" aria-label="Insta Username" required>
+                        <input type="password" id="insta_password" name="password" placeholder="Insta Password" aria-label="Insta Password" required>
+                        <input type="number" id="last_date" name="last_date" placeholder="Last Date" aria-label="Last Date">
+                        <input type="number" id="number_of_videos" name="number_of_videos" placeholder="Number of Videos" aria-label="Number of Videos">
+                        <input type="file" accept=".txt" id="url_list" name="url_list" placeholder="URL List" aria-label="URL List" required>
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <input type="checkbox" id="myCheckbox" name="myCheckbox" checked>
+                            <label for="myCheckbox" style="margin-left: 10px;">Login Required</label>
+                        </div>
+                        <button type="submit" id="submit-button">Scrape Data</button>
+                        <table id="file-content">
+                            <thead>
+                                <tr>
+                                    <th>URLs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- URLs will be inserted here by JavaScript -->
+                            </tbody>
+                        </table>
+                        <p>
+
+                            <a href="sample_url.txt" Download="sample_url_list.txt" target="_blank">Sample URL List</a> |
+                        </p>
+                    </form>
+                <p id = "logout-id"> 
+                    <a href="login.html"> Logout</a>
+                 </p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="module"  src="logic.js">
+        // add logic.js file
+    </script>
+</body>
+</html>

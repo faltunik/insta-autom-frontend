@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+    <title>Login Screen</title>
+</head>
+<body>
+    <div class="login-box">
+        <nav class="container-fluid">
+            <ul>
+                <li><strong>Login Page</strong></li>
+            </ul>
+            
+        </nav>
+        <main class="container">
+            <div class="grid">
+                <section>
+                    <hgroup>
+                        <h2>Welcome Back!</h2>
+                        <h3>Please Login to Your Account</h3>
+                    </hgroup>
+                    <form>
+                        <input type="text" id="username" name="username" placeholder="Username" aria-label="Username" required>
+                        <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" required>
+                        <button type="submit" onclick="event.preventDefault()">Login</button>
+                        <p>
+                            <a href="/dashboard.html">Forgot Password?</a> | 
+                            <a href="#">Sign Up</a>
+                        </p>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

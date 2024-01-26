@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+    <title>Register</title>
+</head>
+<body>
+    <div class="login-box">
+        <nav class="container-fluid">
+            <ul>
+                <li><strong>Register Page</strong></li>
+            </ul>
+            
+        </nav>
+        <main class="container">
+            <div class="grid">
+                <section>
+                    <hgroup>
+                        <h2>Join US!</h2>
+                        <h3>Please Create Your Account</h3>
+                    </hgroup>
+                    <form id ="register">
+                        <input type="email" id="reg_email" name="reg_email" placeholder="Email" aria-label="Email" required>
+                        <input type="password" id="reg_password" name="password" placeholder="Password" aria-label="Password" required>
+                        <input type="password" id="reg_confirm_password" name="confirm_password" placeholder="Confirm Password" aria-label="Confirm Password" required>
+                        <button id="register-button" type="submit">Login</button>
+                        <p>
+                            <a href="/login.html">Already Have Account? Login Here</a> 
+                        </p>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="register.js"></script>
+</body>
+</html>
